@@ -1,6 +1,7 @@
 <?php 
 
-include_once("conection.php");
+include_once("conection/conection.php");
+
 ?>
 
 <!DOCTYPE html>
@@ -10,6 +11,7 @@ include_once("conection.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet"  href="style/app.css">
 </head>
 <body>
 
@@ -49,16 +51,31 @@ include_once("conection.php");
         }
     ?>
 
-    <h1>Login</h1>
+    <div class="form">
 
-    <form method="POST" action="">
-        <label for="">Usuário</label>
-        <input type="text" name="username" placeholder="Digite o usuário"><br><br>
+        <form method="POST" action="">
+            <div class="login-logo">
+                <img class="logo" src="assets/logo.png" alt="">
+            </div>
 
-        <label for="">Senha</label>
-        <input type="text" name="password" placeholder="Digite a senha"><br>
+            <div class="login-colums">
+                <div class="login-colum">
+                    <label for="username">Usuário</label>
+                    <input type="text" id="username" name="username" ><br><br>
+                </div>
 
-        <input type="submit" value="Acessar" name="send-login">
-    </form>
+                <div class="login-colum">
+                    <label for="password">Senha</label>
+                    <input type="text" id="password" name="password" ><br>
+                </div>
+            </div>
+            
+            <div class="login-footer">
+                <input type="submit" value="Acessar" name="send-login">
+                <a href="/php/login-with-php/index.php">Esqueci minha senha</a>
+            </div>
+        
+        </form>
+    </div>
 </body>
 </html>

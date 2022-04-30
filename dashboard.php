@@ -1,7 +1,7 @@
 <?php 
 session_start();
 ob_start();
-include_once 'conection.php';
+include_once 'conection/conection.php';
 if(!isset($_SESSION['name'])) {
     $_SESSION['msg'] = "<p style='color: red'>Necessário fazer login!</p>";
     header('Location: index.php');

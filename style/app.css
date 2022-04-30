@@ -1,0 +1,91 @@
+body {
+    background:#000 url('../assets/background.jpg') center no-repeat ;
+    background-size: cover;
+    margin-top: 1000px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.form {
+    left: 50%;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 320px;
+
+}
+
+.login-logo {
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 80%;
+    margin: 0 auto;
+}
+
+form .login-colums {
+ display: flex;
+ flex-direction: column;
+}
+
+.login-colum {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+label {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input {
+    background-color: rgba(125, 111, 111, .5);
+    border: none;
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding: 0 15px;
+    outline:rgba(125, 111, 111, .5);
+    letter-spacing: 2px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #ed145b ;
+    color: white;
+    height: 50px;
+    font-size: 20px;
+    transition: font-size 1s, background-color 4s, transform 2s;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #d94576;
+    transform: rotate(1deg);
+    transition: font-size 1s, background-color 4s, transform 2s;
+}
+
+.login-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+a {
+    color: #ed145b;
+    margin: 0 auto;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
